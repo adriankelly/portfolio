@@ -1,0 +1,18 @@
+---
+type Props = {
+	headingLevel?: "h1" | "h2" | "h3";
+	[key: string]: any;
+};
+
+const { headingLevel = "h2", ...props } = Astro.props;
+---
+
+<div {...props}>
+	{
+		headingLevel === "h2" && (
+			<h2>
+				<slot />
+			</h2>
+		)
+	}
+</div>
