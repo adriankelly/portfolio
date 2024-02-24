@@ -1,0 +1,43 @@
+---
+import translations from "@utils/t.ts";
+import Layout from "@layouts/Layout.astro";
+import Container from "@src/components/Container.astro";
+import PageHeader from "@src/components/PageHeader.astro";
+
+const t = translations(Astro.url);
+---
+
+<Layout title="Hotjar Documentation" description="Lorem ipsum dolor sit amet">
+	<Container>
+		<div class="mt-6 w-full p-4"><a href="/">← Back to Home</a></div>
+		<div class="flex w-full">
+			<div class="flex-1 p-4">
+				<PageHeader class="m-0 mb-2 font-bold" headingLevel="h2">Hotjar Documentation</PageHeader>
+				<p>
+					Hotjar is a behavior analytics software that lets companies selling online understand how users experience their site. As a Senior
+					Customer Education Manager, I create and maintain educational content and lead a team of 5 part-time documentation writers.<br
+					/><br />
+					 Documentation at Hotjar uses a flexibly applied Diátaxis approach, taking in how-to guides, more in-depth tutorials,
+					explanations, and reference articles.
+				</p>
+			</div>
+			<div class="flex-1 p-4">
+				<PageHeader class="m-0 mb-2 font-bold" headingLevel="h2">Samples</PageHeader>
+				<ul>
+					<li><a href="https://help.hotjar.com/hc/en-us/articles/11571729134103" target="_blank">How to Use Funnels ↗</a></li>
+					<li>
+						<a href="https://help.hotjar.com/hc/en-us/articles/7052701186839" target="_blank">
+							How Can I Use Hotjar to Find Bugs or UX Issues? ↗
+						</a>
+					</li>
+					<li>
+						<a href="https://help.hotjar.com/hc/en-us/articles/6597875033751" target="_blank">
+							How to Send User Attributes with Google Tag Manager ↗
+						</a>
+					</li>
+					<li><a href="https://help.hotjar.com/hc/en-us/articles/6164366461719" target="_blank">How to Set Up Events ↗</a></li>
+				</ul>
+			</div>
+		</div>
+	</Container>
+</Layout>

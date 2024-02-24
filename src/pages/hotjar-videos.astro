@@ -1,0 +1,33 @@
+---
+import translations from "@utils/t.ts";
+import Layout from "@layouts/Layout.astro";
+import Container from "@src/components/Container.astro";
+import PageHeader from "@src/components/PageHeader.astro";
+
+const t = translations(Astro.url);
+---
+
+<Layout title="Hotjar Videos" description="Lorem ipsum dolor sit amet">
+	<Container>
+		<div class="mt-6 w-full p-4"><a href="/">← Back to Home</a></div>
+		<div class="flex w-full">
+			<div class="flex-1 p-4">
+				<PageHeader class="m-0 mb-2 font-bold" headingLevel="h2">Hotjar Videos</PageHeader>
+				<p>
+					Hotjar publishes videos on the Hotjar Help Center and our academy, Hotjar Learning, and they are available on YouTube. Videos are
+					a shorter how-to style or a longer in-depth tutorial, such as a product demo.<br /><br />
+					 Videos are created using Camtasia and hosted on Wistia.
+				</p>
+			</div>
+			<div class="flex-1 p-4">
+				<PageHeader class="m-0 mb-2 font-bold" headingLevel="h2">Samples</PageHeader>
+				<ul>
+					<li><a href="https://hotjar.wistia.com/medias/y02oo0ifbw" target="_blank">Hotjar Product Breakdown ↗</a></li>
+					<li><a href="https://hotjar.wistia.com/medias/omyrh5574g" target="_blank">Introducing: Funnels ↗</a></li>
+					<li><a href="https://hotjar.wistia.com/medias/qvls02ss0d" target="_blank">Hotjar + Google Analytics integration ↗</a></li>
+					<li><a href="https://hotjar.wistia.com/medias/pfxut04it7" target="_blank">Installing the Hotjar tracking code ↗</a></li>
+				</ul>
+			</div>
+		</div>
+	</Container>
+</Layout>

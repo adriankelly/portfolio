@@ -1,0 +1,30 @@
+---
+import translations from "@utils/t.ts";
+import Layout from "@layouts/Layout.astro";
+import Container from "@src/components/Container.astro";
+import PageHeader from "@src/components/PageHeader.astro";
+
+const t = translations(Astro.url);
+---
+
+<Layout title="About Me" description="Lorem ipsum dolor sit amet">
+	<Container>
+		<div class="mt-6 w-full p-4"><a href="/">← Back to Home</a></div>
+		<div class="flex w-full">
+			<div class="p-4">
+				<PageHeader class="m-0 mb-2 font-bold" headingLevel="h2">About Me</PageHeader>
+				<p>
+					I'm a Customer Education Manager with a background that crosses multiple continents and disciplines. Born in New Zealand and
+					growing up in Australia, I graduated from university with law and political science degrees before diving into marketing research
+					analysis and later working as a web developer in London. I draw on these experiences as a Customer Education Manager, helping me
+					reduce complex concepts into clear content that empowers users to find value quickly. I also leverage my analytical skills to
+					inform content strategy and improve content performance.
+				</p><br />
+				<p>
+					I'm a music and coffee lover and also an avid runner, finding peace and inspiration in the trails of Haute-Savoie, France, where I
+					live with my wife and two daughters.
+				</p>
+			</div>
+		</div>
+	</Container>
+</Layout>

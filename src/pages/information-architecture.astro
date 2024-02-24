@@ -1,0 +1,31 @@
+---
+import translations from "@utils/t.ts";
+import Layout from "@layouts/Layout.astro";
+import Container from "@src/components/Container.astro";
+import PageHeader from "@src/components/PageHeader.astro";
+
+const t = translations(Astro.url);
+---
+
+<Layout title="Information Architecture" description="Lorem ipsum dolor sit amet">
+	<Container>
+		<div class="mt-6 w-full p-4"><a href="/">← Back to Home</a></div>
+		<div class="flex w-full">
+			<div class="p-4">
+				<PageHeader class="m-0 mb-2 font-bold" headingLevel="h2">Information Architecture</PageHeader>
+				<p>
+					With product changes and additional product offerings, I've worked on maintaining an effective architecture for the Hotjar Help
+					Center. This involves creating a representation of the current architecture, then taking into account Google Analytics and Google
+					Search Console, user navigation pain points, and considering the broader company objectives to make an architecture change.
+				</p>
+				<img
+					src="/ia_contact.png"
+					alt="Miro board showing several sections of the Help Center and the articles inside, alongside indicators on the contact form for which part of the contact form each article or section will link to."
+					width="797px"
+					height="966px"
+					class="p-4"
+				/>
+			</div>
+		</div>
+	</Container>
+</Layout>

@@ -1,0 +1,49 @@
+---
+import translations from "@utils/t.ts";
+import Layout from "@layouts/Layout.astro";
+import Container from "@src/components/Container.astro";
+import PageHeader from "@src/components/PageHeader.astro";
+
+const t = translations(Astro.url);
+---
+
+<Layout title="Content Strategy and Planning" description="Lorem ipsum dolor sit amet">
+	<Container>
+		<div class="mt-6 w-full p-4"><a href="/">← Back to Home</a></div>
+		<div class="flex w-full">
+			<div class="p-4">
+				<PageHeader class="m-0 mb-2 font-bold" headingLevel="h2">Content Strategy and Planning</PageHeader>
+				<p>
+					To understand customer sentiment towards Hotjar Help Center content, I put in place a Helpfulness Index for each article by
+					fetching article vote counts using the Zendesk API. Crossing this with Google Analytics data, I set up a priority score that
+					dynamically updates to ensure we select the most critical content to improve in our weekly update cycles.
+				</p>
+				<img
+					src="/hc_data_priority.png"
+					alt="Google Sheet showing a sorted table of Jira issues based on priority score to assist with assigning the next most important Customer Education content update."
+					width="752.5px"
+					height="425px"
+					class="p-4"
+				/>
+				<p class="mt-8">
+					I've also completed audits of the Help Center to optimize content, make it more maintainable, and ensure it aligns with customer
+					needs. By setting up a weekly maintenance rotation, I created a system of improving documentation from two directions:
+				</p>
+				<ul>
+					<li>More frequently used docs are naturally updated more regularly.</li>
+					<li>
+						Lesser visited docs aren't left to the side and will remain optimized for search engines while also building customer trust in
+						our documentation and, therefore, the product.
+					</li>
+				</ul>
+				<img
+					src="/ga_total_users.png"
+					alt="Google Sheet showing a sorted table of Total Users according to Google Analytics, to monitor which Help Center articles receive the most traffic."
+					width="617.7px"
+					height="455.3px"
+					class="p-4"
+				/>
+			</div>
+		</div>
+	</Container>
+</Layout>

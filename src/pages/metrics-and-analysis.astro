@@ -1,0 +1,43 @@
+---
+import translations from "@utils/t.ts";
+import Layout from "@layouts/Layout.astro";
+import Container from "@src/components/Container.astro";
+import PageHeader from "@src/components/PageHeader.astro";
+
+const t = translations(Astro.url);
+---
+
+<Layout title="Metrics and Analysis" description="Lorem ipsum dolor sit amet">
+	<Container>
+		<div class="mt-6 w-full p-4"><a href="/">← Back to Home</a></div>
+		<div class="flex w-full">
+			<div class="p-4">
+				<PageHeader class="m-0 mb-2 font-bold" headingLevel="h2">Metrics and Analysis</PageHeader>
+				<p>
+					I use metrics to help make decisions and identify issues in the Hotjar Help Center. I achieve this with Google Analytics data,
+					Algolia search analytics, and help center data such as an article helpfulness index. As a result, I can prioritize documentation
+					updates and identify opportunities to improve the quality of educational content and how it can be delivered more effectively.
+				</p>
+				<img
+					src="/hi_hc.png"
+					alt="Google Sheet showing Zendesk article data imported using the Zendesk API combined with Google Analytics data  and used to determine a Helpfulness Index and Priority Score."
+					width="853px"
+					height="466px"
+					class="p-4"
+				/>
+				<p class="mt-8">
+					Google Analytics data allows for monitoring of the self-service score and is combined with cost-per-ticket details from the
+					Support team, the cost savings provided by the Help Center through deflecting Support tickets can be tracked as an indicator of
+					Help Center success.
+				</p>
+				<img
+					src="/sss_hc.png"
+					alt="Looker Studio dashboard, showing a Self-Service Score using data from Google Analytics to track the Self-Service Score and estimated savings offered by the Help Center over time."
+					width="606px"
+					height="764px"
+					class="p-4"
+				/>
+			</div>
+		</div>
+	</Container>
+</Layout>
