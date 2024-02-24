@@ -17,17 +17,41 @@ type Page = {
 };
 
 export const PAGES: Page[] = [
+	// {
+	// 	title: "Home",
+	// 	href: "/",
+	// },
+	// {
+	// 	title: "Blog",
+	// 	href: "/blog",
+	// },
 	{
-		title: "Home",
-		href: "/",
+		title: "Hotjar Documentation",
+		href: "/hotjar-documentation",
+	},
+	// {
+	// 	title: "Hotjar Courses",
+	// 	href: "/hotjar-courses",
+	// },
+	{
+		title: "Hotjar Videos",
+		href: "/hotjar-videos",
 	},
 	{
-		title: "Blog",
-		href: "/blog",
+		title: "Content Strategy and Planning",
+		href: "/content-strategy-and-planning",
 	},
 	{
-		title: "About",
-		href: "/about",
+		title: "Information Architecture ",
+		href: "/information-architecture",
+	},
+	{
+		title: "Metrics and Analysis",
+		href: "/metrics-and-analysis",
+	},
+	{
+		title: "About Me",
+		href: "/about-me",
 	},
 ];
 
