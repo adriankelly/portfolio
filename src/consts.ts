@@ -2,12 +2,12 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 // Website metadata
-export const SITE_URL: string = "https://astrostarter.zank.studio";
-export const SITE_TITLE: string = "Astro Blog";
-export const SITE_DESCRIPTION: string = "Welcome to my website!";
+export const SITE_URL: string = "https://adriankelly.net";
+export const SITE_TITLE: string = "Adrian Kelly";
+export const SITE_DESCRIPTION: string = "Adrian Kelly portfolio site";
 
 // SEO metadata
-export const TWITTER_CREATOR: string = "@xxx";
+export const TWITTER_CREATOR: string = "@adriankelly";
 
 // Navigation
 type Page = {
